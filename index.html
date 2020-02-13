@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brendan - Javascript student, Aspiring technologist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hello! I'm Brendan, new to web development I am using this page to display a javascript Udemy course."
+    />
+    <meta name="author" content="creativedreams" />
+    <meta
+      name="keywords"
+      content="brendan, student, web developer"
+    />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <link rel="manifest" href="favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <div class="logo" id="lottielogo"></div>
+        <a
+          href="cdn-cgi/l/email-protection.html#234b464f4f4c0d40514642574a5546475146424e5063444e424a4f0d404c4e"
+          class="contact"
+          >SAY HELLO</a
+        >
+      </div>
+      <div class="hero-container">
+        <div class="hero">
+          <div class="hero-info">
+            <h1 class="ml15 hero-title">
+              <span class="word">JAVASCRIPT STUDENT,</span>
+              <span class="word">ASPIRING</span>
+              <span class="word">TECHNOLOGIST</span>
+            </h1>
+            <p class="hero-description">
+                Hello! I'm Brendan, new to web development I am using this page to display a javascript Udemy course.
+            </p>
+            <div class="btn btn-hero">
+              <a href="mymahi.html"><span>UDEMY COURSE PORTFOLIO</span></a>
+            </div>
+            <div class="sm">
+              <a
+                href="chapter_four/starter/index.html"
+                target="_blank"
+                >DICE GAME</a
+              >
+              <a
+                href="https://www.linkedin.com/in/naveen-k-b9670893/"
+                target="_blank"
+                >LINKEDIN</a
+              >
+              <a
+                href="https://www.instagram.com/naveen.creativedreams/"
+                target="_blank"
+                >INSTAGRAM</a
+              >
+              <a href="https://www.facebook.com/naveenkanhangad" target="_blank"
+                >FACEBOOK</a
+              >
+            </div>
+          </div>
+          <div class="naveen" id="lottienaveen"></div>
+        </div>
+      </div>
+    </section>
+    <script
+      data-cfasync="false"
+      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="lottie.js"></script>
+    <script src="bodymovin.js"></script>
+    <script>
+      var params = {
+        container: document.getElementById("lottielogo"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "logo.json"
+      };
+      var anim;
+      anim = lottie.loadAnimation(params);
+      var params = {
+        container: document.getElementById("lottienaveen"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "naveen.json"
+      };
+      var anim;
+      anim = lottie.loadAnimation(params);
+    </script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $(".hero-title").addClass("size");
+        }, 3000);
+        setTimeout(function() {
+          $(".hero-description").addClass("show");
+        }, 3000);
+        setTimeout(function() {
+          $(".hero-info").addClass("mobile-info");
+        }, 3000);
+        setTimeout(function() {
+          $(".btn").addClass("show");
+        }, 3250);
+        setTimeout(function() {
+          $(".sm").addClass("show");
+        }, 3500);
+        setTimeout(function() {
+          $(".naveen").addClass("show");
+        }, 3750);
+        setTimeout(function() {
+          $(".logo").addClass("show");
+        }, 4000);
+        setTimeout(function() {
+          $(".contact").addClass("show");
+        }, 4000);
+      });
+    </script>
+    <script>
+      anime
+        .timeline({ loop: false })
+        .add({
+          targets: ".ml15 .word",
+          scale: [30, 1],
+          opacity: [0, 1],
+          easing: "easeOutCirc",
+          duration: 500,
+          delay: (el, i) => 500 * i
+        })
+        .add({
+          targets: ".ml15",
+          opacity: 1,
+          duration: 800,
+          easing: "easeOutExpo",
+          delay: 800
+        });
+    </script>
+  </body>
+</html>
